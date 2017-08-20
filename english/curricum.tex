@@ -1,0 +1,128 @@
+\documentclass[14pt,a4paper,ragged2e,withhyper]{altacv}
+\usepackage{paracol}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=0.9cm}
+\linespread{1.15}
+
+\ifxetexorluatex
+  \setmainfont{Lato}
+\else
+  \usepackage[default]{lato}
+\fi
+
+\definecolor{WarmBlue}{HTML}{042B76}
+\definecolor{VividOrange}{HTML}{FD6E22}
+\definecolor{LightGrey}{HTML}{666666}
+
+\colorlet{name}{WarmBlue}
+\colorlet{tagline}{VividOrange}
+\colorlet{heading}{WarmBlue}
+\colorlet{headingrule}{WarmBlue}
+\colorlet{personalinfo}{VividOrange}
+\colorlet{accent}{WarmBlue}
+\colorlet{emphasis}{VividOrange}
+\colorlet{body}{LightGrey}
+
+% Fonts change
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+
+\name{MATTIA RIGHETTI}
+\tagline{Fullstack Software Developer}
+\photoR{3.2cm}{profile.png}
+
+\personalinfo{
+  \phone{+39 335 221 518}
+  \email{mattia.righetti@outlook.com}
+  %\mailaddress{Via Giuseppe Verdi 13, Volta Mantovana}
+  \location{Milano, IT}\newline
+  \homepage{mattiarighetti.it}
+  \linkedin{mattiarighetti}
+  \github{github.com/mattiarighetti}
+}
+
+\makecvheader
+
+%% Fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio.
+\columnratio{0.55}
+
+% Start 2-column paracol
+\begin{paracol}{2}
+
+\cvsection{EXPERIENCES}
+
+\cvevent{\textbf{Software Engineer}}{DBInformation Spa}{Jul. 2018 -- Present}{Milan}
+\begin{itemize}
+\item Development and maintenance of web based enterprise application mainly in Java and Php, development of crawlers for web data gathering (using HTMLUnit and Selenium) and software for PDF manipulation with iText, PDFTools and Apache PDFBox
+\item Design and implementation of entity relationship database structures on scaled cluster/replica solutions (MySQL, Oracle)
+\item Design and development of REST API systems in Spring Boot
+\item Integration of Expert System Cogito semantic analysis softwares within business processes
+\item Management of data storage on Netapp, Qnap e Amazon S3
+\item Linux system maintenance (mainly Debian) and bash scripting
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Freelance consultant}}{Self-employed}{Sep. 2014 -- Dec. 2019}{Milan}
+\begin{itemize}
+\item Website development with Wordpress and WooCommerce (as ecommerce module)
+\item Ad hoc iOS apps development (in Swift)
+\item Internet of Things implementation on domotic devices (BlueGiga BGScript, C\#, Microsoft SQL Server)
+\item Development of ad hoc web portals for e-learning, online testing in Tcl/Tk and PostgreSQL (using PL/pgSQL)
+\end{itemize}
+
+\cvsection{EDUCATION}
+
+%\cvevent{Laurea triennale in Ingegneria Informatica}{Politecnico di Milano}{Settembre 2014 -- Febbraio 2019}{} \divider
+
+\cvevent{\textbf{Economy and business information systems diploma}}{I.T.E.S. Alberto Pitentino}{Sep. 2009 -- Jun. 2014}{}
+
+\switchcolumn
+
+\cvsection{SKILLS}
+
+\textbf{Programming languages} \\ \smallskip 
+\cvtag{Java} \cvtag{Php} \cvtag{Tcl/Tk} \cvtag{Javascript} \cvtag{Cobol}
+
+\divider\smallskip
+
+\textbf{Markup languages} \\ \smallskip 
+\cvtag{HTML} \cvtag{CSS} \cvtag{XML} \cvtag{XSLT} \cvtag{JSON} \cvtag{\LaTeX}
+
+\divider\smallskip
+
+\textbf{Server environments} \\ \smallskip
+\cvtag{Apache Tomcat} \cvtag{Apache2/httpd} \cvtag{Nginx}
+
+\cvsection{LANGUAGES}
+
+\cvskill{Italian}{5}
+\cvskill{English}{4}
+\cvskill{French}{4}
+
+\cvsection{VOLUNTEERING}
+
+\cvevent{\textbf{Microsoft Student Partner}}{Microsoft Italia}{Feb. 2016 -- Jul. 2017}{Milan}
+Volunteer students team leader, I have held and organized courses and computer lessons.\\
+\divider \smallskip
+\cvevent{\textbf{Vicepresident, Marketing}}{AIESEC - Local Committee of Milan}{Jan. 2016 -- Feb. 2018}{Milan}
+Vice-president of the local committee and leader of the marketing team, responsible for the realization and creation of advertising campaigns.\\
+
+\cvsection{CERTIFICATIONS}
+\cvevent{\textbf{English for Speakers of Other Languages}}{Cambridge English Language Assessment}{Mar. 2013 \quad -- \quad License \#0039178040}{}
+\divider \smallskip
+\cvevent{\textbf{European Computer Driving License}}{Associazione Italiana per il Calcolo Automatico}{Mar. 2013 \quad -- \quad License \#IT1768744}{}
+            
+\end{paracol}
+
+\end{document}

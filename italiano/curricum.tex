@@ -1,0 +1,128 @@
+\documentclass[14pt,a4paper,ragged2e,withhyper]{altacv}
+\usepackage{paracol}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=0.9cm}
+\linespread{1.15}
+
+\ifxetexorluatex
+  \setmainfont{Lato}
+\else
+  \usepackage[default]{lato}
+\fi
+
+\definecolor{WarmBlue}{HTML}{042B76}
+\definecolor{VividOrange}{HTML}{FD6E22}
+\definecolor{LightGrey}{HTML}{666666}
+
+\colorlet{name}{WarmBlue}
+\colorlet{tagline}{VividOrange}
+\colorlet{heading}{WarmBlue}
+\colorlet{headingrule}{WarmBlue}
+\colorlet{personalinfo}{VividOrange}
+\colorlet{accent}{WarmBlue}
+\colorlet{emphasis}{VividOrange}
+\colorlet{body}{LightGrey}
+
+% Font change
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+
+\name{MATTIA RIGHETTI}
+\tagline{Fullstack Software Developer}
+\photoR{3.2cm}{profile.png}
+
+\personalinfo{
+  \phone{+39 335 221 518}
+  \email{mattia.righetti@outlook.com}
+  %\mailaddress{Via Giuseppe Verdi 13, Volta Mantovana}
+  \location{Milano, IT}\newline
+  \homepage{mattiarighetti.it}
+  \linkedin{mattiarighetti}
+  \github{github.com/mattiarighetti}
+}
+
+\makecvheader
+
+%% Fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Left/right column width ratio
+\columnratio{0.55}
+
+% Start 2-column paracol
+\begin{paracol}{2}
+
+\cvsection{ESPERIENZA}
+
+\cvevent{\textbf{Analista e sviluppatore software}}{DBInformation Spa}{Lug. 2018 -- Oggi}{Milano}
+\begin{itemize}
+\item Sviluppo e manutenzione applicativi aziendali basati sul web in Java e Php, crawlers specifici per il recupero di informazioni in rete (con HTMLUnit e Selenium) e manipolazione PDF con iText, PDFTools e Apache PDFBox
+\item Progettazione basi di dati su modello relazionale e gestione di big data su infrastrutture cluster/replica utilizzando metodologie di sharding (MySQL, Oracle)
+\item Progettazione e sviluppo di endpoint REST API in Spring
+\item Integrazione sistemi di analisi semantica Expert System Cogito
+\item Gestione archiviazione dati su sistemi Netapp, Qnap e Amazon S3
+\item Manutenzione sistemi linux (principalmente Debian) e bash scripting.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Consulente freelance}}{Lavoratore autonomo}{Set. 2014 -- Dic. 2019}{Milano}
+\begin{itemize}
+\item Realizzazione siti internet e portali web principalmente in Wordpress ed e-commerce sfruttando WooCommerce con PayPal o Stripe
+\item Sviluppo applicazioni iOS in Swift
+\item Implementazione di Internet of Things su dispositivi domotici (BlueGiga BGScript, C\#, Microsoft SQL Server)
+\item Sviluppo piattaforme ad hoc di e-learning, test, raccolta ed elaborazione dati in Tcl/Tk e PostgreSQL (utilizzo base di PL/pgSQL)
+\end{itemize}
+
+\cvsection{FORMAZIONE}
+
+%\cvevent{Laurea triennale in Ingegneria Informatica}{Politecnico di Milano}{Settembre 2014 -- Febbraio 2019}{} \divider
+
+\cvevent{\textbf{Diploma in economia e sistemi informativi aziendali}}{I.T.E.S. Alberto Pitentino}{Set. 2009 -- Giu. 2014}{}
+
+\switchcolumn
+
+\cvsection{CAPACITÀ}
+
+\textbf{Linguaggi di programmazione} \\ \smallskip 
+\cvtag{Java} \cvtag{Php} \cvtag{Tcl/Tk} \cvtag{Javascript} \cvtag{Cobol}
+
+\divider\smallskip
+
+\textbf{Linguaggi di markup} \\ \smallskip 
+\cvtag{HTML} \cvtag{CSS} \cvtag{XML} \cvtag{XSLT} \cvtag{JSON} \cvtag{\LaTeX}
+
+\divider\smallskip
+
+\textbf{Ambienti server} \\ \smallskip
+\cvtag{Apache Tomcat} \cvtag{Apache2/httpd} \cvtag{Nginx}
+
+\cvsection{LINGUE}
+
+\cvskill{Italiano}{5}
+\cvskill{Inglese}{4}
+\cvskill{Francese}{4}
+
+\cvsection{VOLONTARIATO}
+
+\cvevent{\textbf{Microsoft Student Partner}}{Microsoft Italia}{Feb. 2016 -- Lug. 2017}{Milano}
+Leader del team di studenti volontari, ho tenuto ed organizzato corsi e lezioni di informatica.\\
+\divider \smallskip
+\cvevent{\textbf{Vicepresidente, Marketing}}{AIESEC - Comitato Locale di Milano}{Gen. 2016 -- Feb. 2018}{Milano}
+Vicepresidente del comitato locale e leader del team marketing, responsabile della realizzazione e della creazione di campagne pubblcitarie.\\
+
+\cvsection{CERTIFICAZIONI}
+\cvevent{\textbf{English for Speakers of Other Languages}}{Cambridge English Language Assessment}{Mar. 2013 \quad -- \quad Licenza \#0039178040}{}
+\divider \smallskip
+\cvevent{\textbf{European Computer Driving License}}{Associazione Italiana per il Calcolo Automatico}{Mar. 2013 \quad -- \quad Licenza \#IT1768744}{}
+            
+\end{paracol}
+
+\end{document}
